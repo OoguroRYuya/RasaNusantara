@@ -4,8 +4,18 @@ from pydantic import BaseModel
 from rdflib import Graph, Namespace
 from rdflib.plugins.sparql.processor import SPARQLResult
 import os
+import google.generativeai as genai
+from dotenv import load_dotenv
+
+# Memuat berkas .env untuk membaca API Key
+load_dotenv()
 
 app = FastAPI(title="Semantic Web API - Kuliner Tradisional")
+
+# Konfigurasi client Gemini jika API Key tersedia
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
+if GEMINI_API_KEY and "YourGeminiApiKey" not in GEMINI_API_KEY and GEMINI_API_KEY != "AIzaSyPlaceholderKeyForTesting" and GEMINI_API_KEY.strip():
+    genai.configure(api_key=GEMINI_API_KEY.strip())
 
 app.add_middleware(
     CORSMiddleware,
@@ -149,6 +159,148 @@ def execute_sparql(req: SparqlRequest):
              return {"message": "Only SELECT queries are fully formatted currently.", "type": results.type}
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
+
+class ChatRequest(BaseModel):
+    uri: str
+    question: str
+    history: list = []
+
+def _get_entity_context(uri: str) -> str:
+    """Helper untuk mengambil hubungan RDF dari entitas sebagai konteks RAG."""
+    safe_uri = uri.replace("\\", "").replace('"', '').replace("'", "").replace(">", "").replace("<", "")
+    
+    # Ambil label atau nama istilah
+    name_query = f"""
+    PREFIX kul: <http://nusantara.org/ontology/kuliner#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    SELECT ?nama WHERE {{
+        <{safe_uri}> kul:namaIstilah|rdfs:label ?nama .
+    }} LIMIT 1
+    """
+    name_res = list(g.query(name_query))
+    if name_res and name_res[0].nama:
+        name = str(name_res[0].nama)
+    else:
+        name = uri.split("#")[-1].split("/")[-1]
+        
+    # Ambil hubungan keluar (outgoing properties)
+    out_query = f"""
+    SELECT ?p ?o WHERE {{
+        <{safe_uri}> ?p ?o .
+    }}
+    """
+    outgoing = []
+    for r in g.query(out_query):
+        p_name = str(r.p).split("#")[-1].split("/")[-1]
+        o_val = str(r.o)
+        if o_val.startswith("http"):
+            o_val = o_val.split("#")[-1].split("/")[-1]
+        outgoing.append(f"- {p_name}: {o_val}")
+        
+    # Ambil hubungan masuk (incoming properties)
+    in_query = f"""
+    SELECT ?s ?p WHERE {{
+        ?s ?p <{safe_uri}> .
+    }}
+    """
+    incoming = []
+    for r in g.query(in_query):
+        s_name = str(r.s).split("#")[-1].split("/")[-1]
+        p_name = str(r.p).split("#")[-1].split("/")[-1]
+        incoming.append(f"- {s_name} (sebagai {p_name})")
+        
+    context = f"Nama Entitas Kuliner: {name}\nURI: {uri}\n\nKarakteristik & Hubungan RDF Terdaftar:\n"
+    context += "\n".join(outgoing) if outgoing else "- Tidak ada data relasi keluar."
+    context += "\n\nEntitas Terkait Lainnya (Hubungan Masuk):\n"
+    context += "\n".join(incoming) if incoming else "- Tidak ada data relasi masuk."
+    
+    return context
+
+@app.get("/api/entity/ai-narrative")
+def get_ai_narrative(uri: str = Query(..., description="URI entitas kuliner")):
+    global GEMINI_API_KEY
+    if not GEMINI_API_KEY or "YourGeminiApiKey" in GEMINI_API_KEY or GEMINI_API_KEY == "AIzaSyPlaceholderKeyForTesting" or not GEMINI_API_KEY.strip():
+        return {
+            "status": "unconfigured",
+            "narrative": "### 🌟 Fitur Asisten Kuliner AI Belum Aktif\n\nUntuk menjelajahi sejarah mendalam, filosofi kebudayaan, tips penyajian, serta resep otomatis untuk kuliner ini, silakan pasang **API Key** Anda terlebih dahulu di berkas `.env` pada direktori backend:\n\n```env\nGEMINI_API_KEY=KUNCI_API_ANDA\n```\n\n*Catatan: Anda dapat membuat kunci API gratis di **[Google AI Studio](https://aistudio.google.com/)**.*"
+        }
+        
+    try:
+        context = _get_entity_context(uri)
+        prompt = f"""
+Anda adalah pakar kuliner tradisional Indonesia terkemuka bernama "Rasa Nusantara AI". 
+Tugas Anda adalah menulis narasi kuliner tradisional yang sangat menarik, kaya akan sejarah, nilai budaya, filosofi, tips penyajian, serta resep berdasarkan data ontologi RDF terstruktur yang diberikan di bawah ini.
+
+DATA RDF ENTITAS:
+\"\"\"
+{context}
+\"\"\"
+
+Format tulisan Anda dalam bahasa Indonesia yang ramah, profesional, dan menggugah selera. Gunakan format Markdown yang menarik (termasuk emoji, judul, dan daftar terformat). Jangan mengada-ada informasi yang bertentangan dengan data RDF (terutama tentang Bahan Utama dan Asal Daerah), namun Anda sangat dipersilakan menambahkan konteks sejarah umum, resep tradisional rumahan yang lezat, serta cara penyajian yang otentik.
+
+Struktur tulisan yang diharapkan:
+1. **Filosofi & Sejarah Singkat**: Ceritakan sejarah, etimologi (jika ada), atau latar belakang budaya/filosofi dari hidangan ini.
+2. **Karakteristik Rasa & Bahan Utama**: Jelaskan perpaduan rasa dari bahan utama yang tercantum di data RDF.
+3. **Resep Tradisional Praktis**: Tuliskan langkah-langkah singkat dan jelas cara membuat hidangan ini secara rumahan.
+4. **Tips Penyajian**: Bagaimana cara terbaik menyajikan hidangan ini agar rasanya lebih menggugah selera.
+
+Buatlah tulisan yang rapi, bersih, dan menggugah selera!
+"""
+        model = genai.GenerativeModel("gemini-2.5-flash")
+        response = model.generate_content(prompt)
+        
+        return {
+            "status": "success",
+            "narrative": response.text
+        }
+    except Exception as e:
+        return {
+            "status": "error",
+            "narrative": f"Gagal menghasilkan narasi AI: {str(e)}"
+        }
+
+@app.post("/api/entity/ai-chat")
+def post_ai_chat(req: ChatRequest):
+    global GEMINI_API_KEY
+    if not GEMINI_API_KEY or "YourGeminiApiKey" in GEMINI_API_KEY or GEMINI_API_KEY == "AIzaSyPlaceholderKeyForTesting" or not GEMINI_API_KEY.strip():
+        return {
+            "status": "unconfigured",
+            "reply": "Asisten AI belum terkonfigurasi. Silakan tambahkan GEMINI_API_KEY Anda pada berkas .env di direktori backend terlebih dahulu."
+        }
+        
+    try:
+        context = _get_entity_context(req.uri)
+        system_instruction = f"""
+Anda adalah virtual chatbot ahli kuliner tradisional Indonesia bernama "Rasa Nusantara AI". 
+Saat ini Anda sedang mengobrol dengan pengguna mengenai entitas kuliner berikut:
+{context}
+
+Gunakan data RDF tersebut sebagai kebenaran utama. Jika pengguna bertanya di luar topik kuliner Indonesia atau entitas makanan ini, ingatkan mereka secara sopan bahwa Anda adalah asisten kuliner khusus. Jawablah setiap pertanyaan secara bersahabat, edukatif, dan menarik dalam bahasa Indonesia yang baik.
+"""
+        model = genai.GenerativeModel(
+        model_name="gemini-2.5-flash",
+            system_instruction=system_instruction
+        )
+        
+        # Susun riwayat obrolan dalam bentuk teks gabungan
+        chat_prompt = "Berikut adalah riwayat percakapan kita:\n"
+        for msg in req.history:
+            sender_name = "User" if msg.get("sender") == "user" else "Rasa Nusantara AI"
+            chat_prompt += f"{sender_name}: {msg.get('text')}\n"
+            
+        chat_prompt += f"\nUser: {req.question}\n\nJawablah sebagai Rasa Nusantara AI secara ringkas, ramah, dan informatif menggunakan format Markdown."
+        
+        response = model.generate_content(chat_prompt)
+        
+        return {
+            "status": "success",
+            "reply": response.text
+        }
+    except Exception as e:
+        return {
+            "status": "error",
+            "reply": f"Terjadi kesalahan saat memproses pertanyaan Anda: {str(e)}"
+        }
 
 if __name__ == "__main__":
     import uvicorn

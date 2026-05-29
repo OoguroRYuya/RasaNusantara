@@ -1,3 +1,5 @@
 fastapi
 uvicorn
 rdflib
+google-generativeai
+python-dotenv
