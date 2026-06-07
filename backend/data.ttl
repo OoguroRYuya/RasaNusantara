@@ -29,24 +29,46 @@ kul:bahanUtama a rdf:Property ;
     rdfs:range kul:Bahan .
 
 # ==========================================
-# Instances - Daerah
+# Instances - Daerah (38 Provinces)
 # ==========================================
-kul:DKIJakarta a kul:Daerah ; rdfs:label "DKI Jakarta" .
-kul:SumateraBarat a kul:Daerah ; rdfs:label "Sumatera Barat" .
-kul:SumateraSelatan a kul:Daerah ; rdfs:label "Sumatera Selatan" .
-kul:KepulauanRiau a kul:Daerah ; rdfs:label "Kepulauan Riau" .
-kul:JawaBarat a kul:Daerah ; rdfs:label "Jawa Barat" .
-kul:JawaTimur a kul:Daerah ; rdfs:label "Jawa Timur" .
-kul:DIYogyakarta a kul:Daerah ; rdfs:label "Daerah Istimewa Yogyakarta" .
-kul:SumateraUtara a kul:Daerah ; rdfs:label "Sumatera Utara" .
-kul:Papua a kul:Daerah ; rdfs:label "Papua" .
-kul:JawaTengah a kul:Daerah ; rdfs:label "Jawa Tengah" .
-kul:Bali a kul:Daerah ; rdfs:label "Bali" .
 kul:Aceh a kul:Daerah ; rdfs:label "Aceh" .
-kul:SulawesiSelatan a kul:Daerah ; rdfs:label "Sulawesi Selatan" .
-kul:SulawesiUtara a kul:Daerah ; rdfs:label "Sulawesi Utara" .
-kul:KalimantanSelatan a kul:Daerah ; rdfs:label "Kalimantan Selatan" .
+kul:SumateraUtara a kul:Daerah ; rdfs:label "Sumatera Utara" .
+kul:SumateraBarat a kul:Daerah ; rdfs:label "Sumatera Barat" .
+kul:Riau a kul:Daerah ; rdfs:label "Riau" .
+kul:KepulauanRiau a kul:Daerah ; rdfs:label "Kepulauan Riau" .
+kul:Jambi a kul:Daerah ; rdfs:label "Jambi" .
+kul:SumateraSelatan a kul:Daerah ; rdfs:label "Sumatera Selatan" .
+kul:BangkaBelitung a kul:Daerah ; rdfs:label "Kepulauan Bangka Belitung" .
+kul:Bengkulu a kul:Daerah ; rdfs:label "Bengkulu" .
+kul:Lampung a kul:Daerah ; rdfs:label "Lampung" .
+kul:DKIJakarta a kul:Daerah ; rdfs:label "DKI Jakarta" .
+kul:JawaBarat a kul:Daerah ; rdfs:label "Jawa Barat" .
+kul:Banten a kul:Daerah ; rdfs:label "Banten" .
+kul:JawaTengah a kul:Daerah ; rdfs:label "Jawa Tengah" .
+kul:DIYogyakarta a kul:Daerah ; rdfs:label "Daerah Istimewa Yogyakarta" .
+kul:JawaTimur a kul:Daerah ; rdfs:label "Jawa Timur" .
+kul:Bali a kul:Daerah ; rdfs:label "Bali" .
 kul:NusaTenggaraBarat a kul:Daerah ; rdfs:label "Nusa Tenggara Barat" .
+kul:NusaTenggaraTimur a kul:Daerah ; rdfs:label "Nusa Tenggara Timur" .
+kul:KalimantanBarat a kul:Daerah ; rdfs:label "Kalimantan Barat" .
+kul:KalimantanTengah a kul:Daerah ; rdfs:label "Kalimantan Tengah" .
+kul:KalimantanSelatan a kul:Daerah ; rdfs:label "Kalimantan Selatan" .
+kul:KalimantanTimur a kul:Daerah ; rdfs:label "Kalimantan Timur" .
+kul:KalimantanUtara a kul:Daerah ; rdfs:label "Kalimantan Utara" .
+kul:SulawesiUtara a kul:Daerah ; rdfs:label "Sulawesi Utara" .
+kul:Gorontalo a kul:Daerah ; rdfs:label "Gorontalo" .
+kul:SulawesiTengah a kul:Daerah ; rdfs:label "Sulawesi Tengah" .
+kul:SulawesiBarat a kul:Daerah ; rdfs:label "Sulawesi Barat" .
+kul:SulawesiSelatan a kul:Daerah ; rdfs:label "Sulawesi Selatan" .
+kul:SulawesiTenggara a kul:Daerah ; rdfs:label "Sulawesi Tenggara" .
+kul:Maluku a kul:Daerah ; rdfs:label "Maluku" .
+kul:MalukuUtara a kul:Daerah ; rdfs:label "Maluku Utara" .
+kul:Papua a kul:Daerah ; rdfs:label "Papua" .
+kul:PapuaBarat a kul:Daerah ; rdfs:label "Papua Barat" .
+kul:PapuaSelatan a kul:Daerah ; rdfs:label "Papua Selatan" .
+kul:PapuaTengah a kul:Daerah ; rdfs:label "Papua Tengah" .
+kul:PapuaPegunungan a kul:Daerah ; rdfs:label "Papua Pegunungan" .
+kul:PapuaBaratDaya a kul:Daerah ; rdfs:label "Papua Barat Daya" .
 
 # ==========================================
 # Instances - Bahan Utama
@@ -54,34 +76,26 @@ kul:NusaTenggaraBarat a kul:Daerah ; rdfs:label "Nusa Tenggara Barat" .
 kul:Ketupat a kul:Bahan ; rdfs:label "Ketupat" .
 kul:Tahu a kul:Bahan ; rdfs:label "Tahu" .
 kul:BumbuKacang a kul:Bahan ; rdfs:label "Bumbu Kacang" .
-
 kul:DagingSapi a kul:Bahan ; rdfs:label "Daging Sapi" .
 kul:Santan a kul:Bahan ; rdfs:label "Santan" .
 kul:RempahRempah a kul:Bahan ; rdfs:label "Rempah-rempah" .
-
 kul:IkanTenggiri a kul:Bahan ; rdfs:label "Ikan Tenggiri" .
 kul:TepungSagu a kul:Bahan ; rdfs:label "Tepung Sagu" .
 kul:Cuko a kul:Bahan ; rdfs:label "Cuko (Cuka Hitam)" .
-
 kul:TepungTerigu a kul:Bahan ; rdfs:label "Tepung Terigu" .
 kul:IkanTongkol a kul:Bahan ; rdfs:label "Ikan Tongkol" .
 kul:KacangKedelai a kul:Bahan ; rdfs:label "Kacang Kedelai" .
 kul:MinyakGoreng a kul:Bahan ; rdfs:label "Minyak Goreng" .
-
 kul:Kluwek a kul:Bahan ; rdfs:label "Kluwek" .
 kul:NangkaMuda a kul:Bahan ; rdfs:label "Nangka Muda" .
 kul:GulaAren a kul:Bahan ; rdfs:label "Gula Aren" .
-
 kul:TepungTapioka a kul:Bahan ; rdfs:label "Tepung Tapioka" .
 kul:Telur a kul:Bahan ; rdfs:label "Telur" .
 kul:Nira a kul:Bahan ; rdfs:label "Air Nira" .
-
 kul:Bakso a kul:Bahan ; rdfs:label "Bakso" .
 kul:Siomay a kul:Bahan ; rdfs:label "Siomay" .
 kul:KalduKuah a kul:Bahan ; rdfs:label "Kaldu Kuah" .
-
 kul:AirPanas a kul:Bahan ; rdfs:label "Air Panas" .
-
 kul:DagingAyam a kul:Bahan ; rdfs:label "Daging Ayam" .
 kul:Beras a kul:Bahan ; rdfs:label "Beras" .
 kul:BerasKetan a kul:Bahan ; rdfs:label "Beras Ketan" .
@@ -103,6 +117,19 @@ kul:Bayam a kul:Bahan ; rdfs:label "Bayam" .
 kul:PisangKepok a kul:Bahan ; rdfs:label "Pisang Kepok" .
 kul:TepungBeras a kul:Bahan ; rdfs:label "Tepung Beras" .
 kul:SirupMerah a kul:Bahan ; rdfs:label "Sirup Merah" .
+kul:DagingKambing a kul:Bahan ; rdfs:label "Daging Kambing" .
+kul:IkanPatin a kul:Bahan ; rdfs:label "Ikan Patin" .
+kul:Cabai a kul:Bahan ; rdfs:label "Cabai" .
+kul:KacangTanah a kul:Bahan ; rdfs:label "Kacang Tanah" .
+kul:IkanBandeng a kul:Bahan ; rdfs:label "Ikan Bandeng" .
+kul:IkanTuna a kul:Bahan ; rdfs:label "Ikan Tuna" .
+kul:IkanCakalang a kul:Bahan ; rdfs:label "Ikan Cakalang" .
+kul:Oncom a kul:Bahan ; rdfs:label "Oncom" .
+kul:Jagung a kul:Bahan ; rdfs:label "Jagung" .
+kul:UbiKayu a kul:Bahan ; rdfs:label "Ubi Kayu" .
+kul:Kepiting a kul:Bahan ; rdfs:label "Kepiting" .
+kul:UlatSagu a kul:Bahan ; rdfs:label "Ulat Sagu" .
+kul:DagingRusa a kul:Bahan ; rdfs:label "Daging Rusa" .
 
 # ==========================================
 # Instances - Kuliner (Makanan)
@@ -200,7 +227,7 @@ kul:Seblak a kul:Makanan ;
 kul:AyamBetutu a kul:Makanan ;
     kul:namaIstilah "Ayam Betutu" ;
     kul:asalDaerah kul:Bali ;
-    kul:etimologi "Berasal dari kata 'tunu' yang berarti bakar dan 'betu' yang berarti menyatu. Merujuk pada bumbu yang disatukan ke dalam perut ayam lalu dibakar dalam sekam." ;
+    kul:etimologi "Berasal dari kata 'tunu' yang berarti bakar and 'betu' yang berarti menyatu. Merujuk pada bumbu yang disatukan ke dalam perut ayam lalu dibakar dalam sekam." ;
     kul:bahanUtama kul:DagingAyam, kul:BumbuGenep .
 
 kul:SateLilit a kul:Makanan ;
@@ -256,3 +283,961 @@ kul:Klepon a kul:Makanan ;
     kul:asalDaerah kul:JawaTengah ;
     kul:etimologi "Diduga berasal dari bahasa Jawa Kuno yang berarti 'indung telur hewan', merujuk pada bentuk kue ini yang bulat-bulat hijau kecil dan berisi cairan gula merah di dalamnya." ;
     kul:bahanUtama kul:TepungBeras, kul:KelapaParut, kul:GulaAren .
+
+kul:SieReuboh a kul:Makanan ;
+    kul:namaIstilah "Sie Reuboh" ;
+    kul:asalDaerah kul:Aceh ;
+    kul:etimologi "Arti harfiahnya adalah daging rebus, yaitu masakan daging cuka khas wilayah Aceh Besar." ;
+    kul:bahanUtama kul:DagingSapi, kul:RempahRempah .
+
+kul:AyamTangkap a kul:Makanan ;
+    kul:namaIstilah "Ayam Tangkap" ;
+    kul:asalDaerah kul:Aceh ;
+    kul:etimologi "Dinamakan demikian karena potongan ayam goreng disajikan tersembunyi di balik tumpukan daun koja dan daun pandan goreng garing." ;
+    kul:bahanUtama kul:DagingAyam, kul:RempahRempah .
+
+kul:SateMatang a kul:Makanan ;
+    kul:namaIstilah "Sate Matang" ;
+    kul:asalDaerah kul:Aceh ;
+    kul:etimologi "Berasal dari nama kota Matang Glumpang Dua di Kabupaten Bireuen tempat sate ini pertama kali dikembangkan." ;
+    kul:bahanUtama kul:DagingKambing, kul:RempahRempah .
+
+kul:KuahPliekU a kul:Makanan ;
+    kul:namaIstilah "Kuah Pliek U" ;
+    kul:asalDaerah kul:Aceh ;
+    kul:etimologi "Pliek U adalah ampas kelapa sisa pembuatan minyak kelapa yang difermentasi, dasar utama bumbu gulai sayur ini." ;
+    kul:bahanUtama kul:Santan, kul:RempahRempah .
+
+kul:Timphan a kul:Makanan ;
+    kul:namaIstilah "Timphan" ;
+    kul:asalDaerah kul:Aceh ;
+    kul:etimologi "Kue basah tradisional legendaris berbalut daun pisang muda yang wajib ada di setiap rumah saat hari raya Aceh." ;
+    kul:bahanUtama kul:TepungBeras, kul:Santan .
+
+kul:ArsikIkan a kul:Makanan ;
+    kul:namaIstilah "Arsik Ikan Mas" ;
+    kul:asalDaerah kul:SumateraUtara ;
+    kul:etimologi "Berasal dari kata Batak Marsik yang berarti mengeringkan, merujuk pada cara memasak kuah bumbu andaliman hingga menyusut." ;
+    kul:bahanUtama kul:RempahRempah .
+
+kul:Saksang a kul:Makanan ;
+    kul:namaIstilah "Saksang" ;
+    kul:asalDaerah kul:SumateraUtara ;
+    kul:etimologi "Hidangan khas etnis Batak Toba bercita rasa rempah andaliman pekat." ;
+    kul:bahanUtama kul:DagingSapi, kul:RempahRempah .
+
+kul:MieGomak a kul:Makanan ;
+    kul:namaIstilah "Mie Gomak" ;
+    kul:asalDaerah kul:SumateraUtara ;
+    kul:etimologi "Dinamakan gomak karena proses penyajian tradisional zaman dahulu digenggam langsung menggunakan tangan." ;
+    kul:bahanUtama kul:MieKuning, kul:Santan .
+
+kul:NaNiura a kul:Makanan ;
+    kul:namaIstilah "Na Niura" ;
+    kul:asalDaerah kul:SumateraUtara ;
+    kul:etimologi "Berarti diasami, hidangan ikan mentah yang matang melalui fermentasi rendaman asam jungga lokal tanpa api." ;
+    kul:bahanUtama kul:RempahRempah .
+
+kul:SotoMedan a kul:Makanan ;
+    kul:namaIstilah "Soto Medan" ;
+    kul:asalDaerah kul:SumateraUtara ;
+    kul:etimologi "Variasi soto nusantara berciri khas kuah santan kental kuning kehijauan beraroma jinten." ;
+    kul:bahanUtama kul:DagingAyam, kul:Santan .
+
+kul:SatePadang a kul:Makanan ;
+    kul:namaIstilah "Sate Padang" ;
+    kul:asalDaerah kul:SumateraBarat ;
+    kul:etimologi "Sate lidah atau daging sapi khas Minangkabau dengan siraman kuah kental kuning berempah tajam pedas." ;
+    kul:bahanUtama kul:DagingSapi, kul:RempahRempah .
+
+kul:DendengBalado a kul:Makanan ;
+    kul:namaIstilah "Dendeng Balado" ;
+    kul:asalDaerah kul:SumateraBarat ;
+    kul:etimologi "Dendeng daging sapi tipis garing yang dilumuri bumbu balado tumbuk cabai merah kasar." ;
+    kul:bahanUtama kul:DagingSapi, kul:Cabai .
+
+kul:SotoPadang a kul:Makanan ;
+    kul:namaIstilah "Soto Padang" ;
+    kul:asalDaerah kul:SumateraBarat ;
+    kul:etimologi "Soto berkuah kaldu sapi bening dengan potongan dendeng garing, bihun, dan perkedel kentang." ;
+    kul:bahanUtama kul:DagingSapi, kul:BerasKetan .
+
+kul:GulaiTunjang a kul:Makanan ;
+    kul:namaIstilah "Gulai Tunjang" ;
+    kul:asalDaerah kul:SumateraBarat ;
+    kul:etimologi "Tunjang berarti bagian kikil, kulit, atau urat kaki sapi yang diolah dalam gulai santan berlemak." ;
+    kul:bahanUtama kul:DagingSapi, kul:Santan .
+
+kul:AyamPop a kul:Makanan ;
+    kul:namaIstilah "Ayam Pop" ;
+    kul:asalDaerah kul:SumateraBarat ;
+    kul:etimologi "Populer dari sebuah rumah makan di Bukittinggi yang mempopulerkan sajian ayam gurih berwarna pucat ini." ;
+    kul:bahanUtama kul:DagingAyam, kul:Santan .
+
+kul:GulaiIkanPatin a kul:Makanan ;
+    kul:namaIstilah "Gulai Ikan Patin" ;
+    kul:asalDaerah kul:Riau ;
+    kul:etimologi "Sajian andalan melayu Riau memanfaatkan kekayaan tangkapan sungai yang melimpah." ;
+    kul:bahanUtama kul:IkanPatin, kul:Santan .
+
+kul:NasiLemakRiau a kul:Makanan ;
+    kul:namaIstilah "Nasi Lemak Riau" ;
+    kul:asalDaerah kul:Riau ;
+    kul:etimologi "Nasi gurih tanah Melayu yang ditanak memakai santan kelapa dan daun pandan wangi." ;
+    kul:bahanUtama kul:Beras, kul:Santan .
+
+kul:RotiCanaiRiau a kul:Makanan ;
+    kul:namaIstilah "Roti Canai Riau" ;
+    kul:asalDaerah kul:Riau ;
+    kul:etimologi "Roti pipih pengaruh budaya India Muslim yang populer di wilayah pesisir timur Sumatera." ;
+    kul:bahanUtama kul:TepungTerigu .
+
+kul:AsamPedasIkan a kul:Makanan ;
+    kul:namaIstilah "Asam Pedas Ikan" ;
+    kul:asalDaerah kul:Riau ;
+    kul:etimologi "Masakan berkuah merah tanpa santan dengan perpaduan rasa masam belimbing wuluh dan cabai." ;
+    kul:bahanUtama kul:Cabai .
+
+kul:MiSaguRiau a kul:Makanan ;
+    kul:namaIstilah "Mi Sagu" ;
+    kul:asalDaerah kul:Riau ;
+    kul:etimologi "Mie bertekstur kenyal khas Selatpanjang Kepulauan Meranti berbahan dasar empulur pohon sagu." ;
+    kul:bahanUtama kul:TepungSagu .
+
+kul:BoluKemojo a kul:Makanan ;
+    kul:namaIstilah "Bolu Kemojo" ;
+    kul:asalDaerah kul:Riau ;
+    kul:etimologi "Dinamakan kemojo karena dicetak menggunakan loyang berbentuk kelopak bunga kamboja kuno." ;
+    kul:bahanUtama kul:TepungTerigu, kul:Santan .
+
+kul:MieLendir a kul:Makanan ;
+    kul:namaIstilah "Mie Lendir" ;
+    kul:asalDaerah kul:KepulauanRiau ;
+    kul:etimologi "Disebut lendir karena kuah siraman kacang tanahnya bertekstur kental pekat dari campuran maizena." ;
+    kul:bahanUtama kul:MieKuning, kul:KacangTanah .
+
+kul:SupIkanBatam a kul:Makanan ;
+    kul:namaIstilah "Sup Ikan Batam" ;
+    kul:asalDaerah kul:KepulauanRiau ;
+    kul:etimologi "Sup bening segar berkuah gurih dengan irisan ikan tenggiri, tomat hijau, dan sawi asin." ;
+    kul:bahanUtama kul:IkanTenggiri .
+
+kul:Gonggong a kul:Makanan ;
+    kul:namaIstilah "Gonggong" ;
+    kul:asalDaerah kul:KepulauanRiau ;
+    kul:etimologi "Kuliner biota sejenis siput laut khas perairan Kepri yang direbus dan dicocol sambal." ;
+    kul:bahanUtama kul:Cabai .
+
+kul:TempoyakPatin a kul:Makanan ;
+    kul:namaIstilah "Tempoyak Ikan Patin" ;
+    kul:asalDaerah kul:Jambi ;
+    kul:etimologi "Tempoyak adalah bumbu fermentasi daging buah durian yang memberikan rasa asam manis gurih pada gulai." ;
+    kul:bahanUtama kul:IkanPatin, kul:Santan .
+
+kul:NasiGemuk a kul:Makanan ;
+    kul:namaIstilah "Nasi Gemuk" ;
+    kul:asalDaerah kul:Jambi ;
+    kul:etimologi "Dinamakan gemuk karena takaran santan kelapanya yang tinggi membuat nasi berasa gurih berminyak." ;
+    kul:bahanUtama kul:Beras, kul:Santan .
+
+kul:GulaiTepekIkan a kul:Makanan ;
+    kul:namaIstilah "Gulai Tepek Ikan" ;
+    kul:asalDaerah kul:Jambi ;
+    kul:etimologi "Adonan ikan yang dipadatkan dengan cara ditepek-tepek lalu diiris tipis disiram kuah gulai." ;
+    kul:bahanUtama kul:IkanTenggiri, kul:Santan .
+
+kul:PempekJambi a kul:Makanan ;
+    kul:namaIstilah "Pempek Jambi" ;
+    kul:asalDaerah kul:Jambi ;
+    kul:etimologi "Serupa dengan variasi Palembang namun dinikmati dengan paduan cuka berkarakter manis sedang." ;
+    kul:bahanUtama kul:IkanTenggiri, kul:TepungSagu .
+
+kul:KuePadamaran a kul:Makanan ;
+    kul:namaIstilah "Kue Padamaran" ;
+    kul:asalDaerah kul:Jambi ;
+    kul:etimologi "Kue basah tradisional berwarna hijau pandan dalam wadah takir, disiram gula aren cair." ;
+    kul:bahanUtama kul:TepungBeras, kul:GulaAren .
+
+kul:Tekwan a kul:Makanan ;
+    kul:namaIstilah "Tekwan" ;
+    kul:asalDaerah kul:SumateraSelatan ;
+    kul:etimologi "Berasal dari singkatan kalimat lokal Palembang bekotek samo kawan yang berarti mengobrol bersama teman." ;
+    kul:bahanUtama kul:IkanTenggiri, kul:TepungSagu .
+
+kul:Laksan a kul:Makanan ;
+    kul:namaIstilah "Laksan" ;
+    kul:asalDaerah kul:SumateraSelatan ;
+    kul:etimologi "Adonan pempek lenjer yang diiris melintang tebal lalu disiram kuah santan gulai merah pedas." ;
+    kul:bahanUtama kul:IkanTenggiri, kul:Santan .
+
+kul:Celimpungan a kul:Makanan ;
+    kul:namaIstilah "Celimpungan" ;
+    kul:asalDaerah kul:SumateraSelatan ;
+    kul:etimologi "Mirip laksan namun adonannya dibentuk bulat pipih lebar dengan siraman kuah santan kuning kunyit." ;
+    kul:bahanUtama kul:IkanTenggiri, kul:Santan .
+
+kul:MieCelor a kul:Makanan ;
+    kul:namaIstilah "Mie Celor" ;
+    kul:asalDaerah kul:SumateraSelatan ;
+    kul:etimologi "Celor bermakna dicelupkan ke air panas, merujuk cara mematangkan mie sebelum diguyur kaldu udang." ;
+    kul:bahanUtama kul:MieKuning, kul:Santan .
+
+kul:PindangPatin a kul:Makanan ;
+    kul:namaIstilah "Pindang Patin" ;
+    kul:asalDaerah kul:SumateraSelatan ;
+    kul:etimologi "Hidangan kuah bening asam pedas segar dengan tambahan potongan nanas dan daun kemangi." ;
+    kul:bahanUtama kul:IkanPatin, kul:Cabai .
+
+kul:LempahKuning a kul:Makanan ;
+    kul:namaIstilah "Lempah Kuning" ;
+    kul:asalDaerah kul:BangkaBelitung ;
+    kul:etimologi "Lempah berarti masakan berkuah, kunir melambangkan warna kuah dominan hasil ulekan kunyit." ;
+    kul:bahanUtama kul:RempahRempah .
+
+kul:MieBangka a kul:Makanan ;
+    kul:namaIstilah "Mie Bangka" ;
+    kul:asalDaerah kul:BangkaBelitung ;
+    kul:etimologi "Sajian bakmi tipis khas Hakka Bangka dengan topping tumisan daging ayam cincang gurih asin." ;
+    kul:bahanUtama kul:MieKuning, kul:DagingAyam .
+
+kul:Pantiaw a kul:Makanan ;
+    kul:namaIstilah "Pantiaw" ;
+    kul:asalDaerah kul:BangkaBelitung ;
+    kul:etimologi "Kuliner akulturasi berupa kwetiau beras pipih yang disiram kuah ikan giling kering." ;
+    kul:bahanUtama kul:TepungBeras, kul:IkanTenggiri .
+
+kul:Rusip a kul:Makanan ;
+    kul:namaIstilah "Rusip" ;
+    kul:asalDaerah kul:BangkaBelitung ;
+    kul:etimologi "Sambal hasil fermentasi ikan teri mentah bersama garam dan gula aren di dalam tempayan." ;
+    kul:bahanUtama kul:GulaAren .
+
+kul:MartabakBangka a kul:Makanan ;
+    kul:namaIstilah "Martabak Bangka" ;
+    kul:asalDaerah kul:BangkaBelitung ;
+    kul:etimologi "Dikenal secara lokal sebagai Hok Lo Pan, kue dadar manis tebal peninggalan suku Tionghoa." ;
+    kul:bahanUtama kul:TepungTerigu .
+
+# ==========================================
+# Kelanjutan Instances - Kuliner (Makanan)
+# ==========================================
+
+kul:Pendap a kul:Makanan ;
+    kul:namaIstilah "Pendap" ;
+    kul:asalDaerah kul:Bengkulu ;
+    kul:etimologi "Berasal dari bahasa Bengkulu yang merujuk pada proses memadatkan ikan berbumbu rempah melimpah di dalam bungkusan daun talas yang diikat rapat." ;
+    kul:bahanUtama kul:IkanTenggiri, kul:KelapaParut, kul:RempahRempah .
+
+kul:BagarHiu a kul:Makanan ;
+    kul:namaIstilah "Bagar Hiu" ;
+    kul:asalDaerah kul:Bengkulu ;
+    kul:etimologi "Bagar berarti dimasak kuah kental berempah mirip rendang namun tanpa santan kelapa, melainkan menggunakan kelapa sangrai. Merupakan salah satu makanan favorit Presiden Soekarno saat pengasingan." ;
+    kul:bahanUtama kul:RempahRempah .
+
+kul:Lema a kul:Makanan ;
+    kul:namaIstilah "Lema" ;
+    kul:asalDaerah kul:Bengkulu ;
+    kul:etimologi "Berasal dari bahasa suku Rejang. Hidangan ini merupakan hasil fermentasi dari cincangan rebung bambu muda yang dicampur dengan ikan air tawar." ;
+    kul:bahanUtama kul:Rebung .
+
+kul:KueTat a kul:Makanan ;
+    kul:namaIstilah "Kue Tat" ;
+    kul:asalDaerah kul:Bengkulu ;
+    kul:etimologi "Berakar dari pengaruh kuliner Barat (tart). Dahulu merupakan kue mewah yang hanya disajikan secara eksklusif untuk kalangan raja dan bangsawan Bengkulu." ;
+    kul:bahanUtama kul:TepungTerigu, kul:GulaAren .
+
+kul:Seruit a kul:Makanan ;
+    kul:namaIstilah "Seruit" ;
+    kul:asalDaerah kul:Lampung ;
+    kul:etimologi "Berasal dari kata 'nyeruit' yang berarti sebuah tradisi atau aktivitas makan bersama-sama bagi keluarga masyarakat Lampung." ;
+    kul:bahanUtama kul:IkanPatin, kul:Cabai .
+
+kul:GulaiTaboh a kul:Makanan ;
+    kul:namaIstilah "Gulai Taboh" ;
+    kul:asalDaerah kul:Lampung ;
+    kul:etimologi "Taboh dalam bahasa Lampung memiliki arti santan atau berkuah santan. Gulai ini memadukan santan dengan ubi-ubian atau ikan mas." ;
+    kul:bahanUtama kul:Santan, kul:IkanPatin .
+
+kul:Gabing a kul:Makanan ;
+    kul:namaIstilah "Gabing" ;
+    kul:asalDaerah kul:Lampung ;
+    kul:etimologi "Merujuk langsung pada bahan baku utamanya, yaitu potongan batang kelapa yang masih sangat muda (umbut) yang diiris lalu direbus berkuah santan." ;
+    kul:bahanUtama kul:Santan .
+
+kul:KemplangLampung a kul:Makanan ;
+    kul:namaIstilah "Kemplang Lampung" ;
+    kul:asalDaerah kul:Lampung ;
+    kul:etimologi "Berasal dari kata 'dikemplang' yang berarti dipukul-pukul atau dipipihkan, merujuk pada proses pembuatan adonan kerupuk ikan sebelum dipanggang." ;
+    kul:bahanUtama kul:IkanTenggiri, kul:TepungSagu .
+
+kul:SotoBetawi a kul:Makanan ;
+    kul:namaIstilah "Soto Betawi" ;
+    kul:asalDaerah kul:DKIJakarta ;
+    kul:etimologi "Istilah Soto Betawi pertama kali dipopulerkan dan dijual oleh seorang penjual soto bernama Lie Boen Po pada tahun 1970-an di kawasan Jakarta." ;
+    kul:bahanUtama kul:DagingSapi, kul:Santan, kul:JeroanSapi .
+
+kul:AsinanBetawi a kul:Makanan ;
+    kul:namaIstilah "Asinan Betawi" ;
+    kul:asalDaerah kul:DKIJakarta ;
+    kul:etimologi "Dinamakan asinan karena proses pengolahan sayuran mentahnya yang diawetkan menggunakan larutan air garam (diasinkan) sebelum disiram bumbu kacang encer." ;
+    kul:bahanUtama kul:SayuranRebus, kul:KacangTanah .
+
+kul:SayurBabanci a kul:Makanan ;
+    kul:namaIstilah "Sayur Babanci" ;
+    kul:asalDaerah kul:DKIJakarta ;
+    kul:etimologi "Disebut babanci karena hidangan ini tidak jelas kelaminnya; tidak bisa dikategorikan sebagai gulai, sayur, ataupun soto karena racikan bumbunya yang sangat rumit." ;
+    kul:bahanUtama kul:DagingSapi, kul:Santan, kul:RempahRempah .
+
+kul:KembangGoyang a kul:Makanan ;
+    kul:namaIstilah "Kembang Goyang" ;
+    kul:asalDaerah kul:DKIJakarta ;
+    kul:etimologi "Dinamakan kembang goyang karena cetakannya berbentuk kelopak bunga (kembang) dan proses memasaknya harus digoyang-goyang di dalam minyak panas agar terlepas." ;
+    kul:bahanUtama kul:TepungBeras, kul:MinyakGoreng .
+
+kul:SotoBandung a kul:Makanan ;
+    kul:namaIstilah "Soto Bandung" ;
+    kul:asalDaerah kul:JawaBarat ;
+    kul:etimologi "Variasi soto khas Parahyangan yang terkenal dengan ciri khas kuah beningnya serta penggunaan potongan lobak putih dan taburan kacang kedelai goreng." ;
+    kul:bahanUtama kul:DagingSapi, kul:KacangKedelai .
+
+kul:Karedok a kul:Makanan ;
+    kul:namaIstilah "Karedok" ;
+    kul:asalDaerah kul:JawaBarat ;
+    kul:etimologi "Berasal dari nama sebuah desa di bantaran Sungai Cimanuk bernama Desa Karedok. Ciri utamanya menggunakan sayuran yang sepenuhnya mentah." ;
+    kul:bahanUtama kul:SayuranRebus, kul:KacangTanah, kul:Kencur .
+
+kul:MieKocok a kul:Makanan ;
+    kul:namaIstilah "Mie Kocok" ;
+    kul:asalDaerah kul:JawaBarat ;
+    kul:etimologi "Dinamakan mie kocok karena proses memasaknya dengan cara mencelupkan mie dan tauge ke dalam wadah logam berlubang lalu dikocok-kocok di dalam air panas." ;
+    kul:bahanUtama kul:MieKuning, kul:JeroanSapi, kul:KalduKuah .
+
+kul:TutugOncom a kul:Makanan ;
+    kul:namaIstilah "Nasi Tutug Oncom" ;
+    kul:asalDaerah kul:JawaBarat ;
+    kul:etimologi "Tutug dalam bahasa Sunda berarti ditumbuk atau dihancurkan. Nasi ini dibuat dengan cara menumbuk oncom bakar bersama nasi hangat." ;
+    kul:bahanUtama kul:Beras, kul:Oncom .
+
+kul:EmpalGentong a kul:Makanan ;
+    kul:namaIstilah "Empal Gentong" ;
+    kul:asalDaerah kul:JawaBarat ;
+    kul:etimologi "Gentong merujuk pada kuali tanah liat tebal berbentuk silinder yang digunakan secara tradisional untuk memasak empal di atas kayu bakar." ;
+    kul:bahanUtama kul:DagingSapi, kul:JeroanSapi, kul:Santan .
+
+kul:SateMaranggi a kul:Makanan ;
+    kul:namaIstilah "Sate Maranggi" ;
+    kul:asalDaerah kul:JawaBarat ;
+    kul:etimologi "Berasal dari nama seorang pembuat sate legendaris di masa lalu bernama Mak Ranggi yang mempopulerkan sate berlumur bumbu ketumbar ini." ;
+    kul:bahanUtama kul:DagingSapi, kul:RempahRempah .
+
+kul:Combro a kul:Makanan ;
+    kul:namaIstilah "Combro" ;
+    kul:asalDaerah kul:JawaBarat ;
+    kul:etimologi "Merupakan akronim dari bahasa Sunda 'oncom di jero' yang berarti oncom di bagian dalam. Merujuk pada gorengan singkong parut berisi tumisan oncom pedas." ;
+    kul:bahanUtama kul:UbiKayu, kul:Oncom .
+
+kul:Misro a kul:Makanan ;
+    kul:namaIstilah "Misro" ;
+    kul:asalDaerah kul:JawaBarat ;
+    kul:etimologi "Merupakan akronim dari bahasa Sunda 'amis di jero' yang berarti manis di bagian dalam. Berupa parutan singkong goreng berisi lelehan gula aren." ;
+    kul:bahanUtama kul:UbiKayu, kul:GulaAren .
+
+kul:Cireng a kul:Makanan ;
+    kul:namaIstilah "Cireng" ;
+    kul:asalDaerah kul:JawaBarat ;
+    kul:etimologi "Merupakan akronim dari bahasa Sunda 'aci digoreng' yang mengacu pada adonan tepung tapioka atau aci kental yang dibumbui lalu digoreng garing." ;
+    kul:bahanUtama kul:TepungTapioka, kul:MinyakGoreng .
+
+kul:Cilok a kul:Makanan ;
+    kul:namaIstilah "Cilok" ;
+    kul:asalDaerah kul:JawaBarat ;
+    kul:etimologi "Merupakan akronim dari bahasa Sunda 'aci dicolok'. Berupa camilan bulat kenyal dari tepung tapioka yang disajikan dengan cara dicolok menggunakan lidi." ;
+    kul:bahanUtama kul:TepungTapioka, kul:BumbuKacang .
+
+kul:Cimol a kul:Makanan ;
+    kul:namaIstilah "Cimol" ;
+    kul:asalDaerah kul:JawaBarat ;
+    kul:etimologi "Merupakan akronim dari bahasa Sunda 'aci digemol'. Gemol berarti dibentuk bulat-bulat kecil menggunakan tangan sebelum akhirnya digoreng." ;
+    kul:bahanUtama kul:TepungTapioka, kul:MinyakGoreng .
+
+kul:Batagor a kul:Makanan ;
+    kul:namaIstilah "Batagor" ;
+    kul:asalDaerah kul:JawaBarat ;
+    kul:etimologi "Merupakan akronim dari 'bakso tahu digoreng'. Kuliner ini lahir dari kreativitas mengolah sisa bakso tahu kukus yang tidak habis dengan cara digoreng garing." ;
+    kul:bahanUtama kul:Tahu, kul:TepungSagu, kul:BumbuKacang .
+
+kul:Rabeg a kul:Makanan ;
+    kul:namaIstilah "Rabeg" ;
+    kul:asalDaerah kul:Banten ;
+    kul:etimologi "Berasal dari nama sebuah kota di Arab Saudi, Robigh. Terinspirasi dari hidangan daging yang dicicipi Sultan Maulana Hasanuddin saat menunaikan ibadah haji." ;
+    kul:bahanUtama kul:DagingKambing, kul:RempahRempah .
+
+kul:SateBandeng a kul:Makanan ;
+    kul:namaIstilah "Sate Bandeng" ;
+    kul:asalDaerah kul:Banten ;
+    kul:etimologi "Diciptakan oleh juru masak kesultanan Banten untuk menyajikan ikan bandeng tanpa duri kepada raja, dengan cara mengeluarkan dagingnya, menghancurkannya, lalu memasukkannya kembali." ;
+    kul:bahanUtama kul:IkanBandeng, kul:Santan .
+
+kul:PecakBandeng a kul:Makanan ;
+    kul:namaIstilah "Pecak Bandeng" ;
+    kul:asalDaerah kul:Banten ;
+    kul:etimologi "Pecak merujuk pada metode penyajian ikan bakar segar yang langsung dipenyet atau dilumuri dengan sambal mentah jeruk limau yang pedas menyengat." ;
+    kul:bahanUtama kul:IkanBandeng, kul:Cabai .
+
+kul:NasiSumsum a kul:Makanan ;
+    kul:namaIstilah "Nasi Sumsum Banten" ;
+    kul:asalDaerah kul:Banten ;
+    kul:etimologi "Nasi bakar yang dibumbui dan dicampur dengan sumsum tulang sapi, dibungkus daun pisang lalu dibakar di atas arang hingga aromanya meresap." ;
+    kul:bahanUtama kul:Beras, kul:DagingSapi .
+
+kul:GarangAsem a kul:Makanan ;
+    kul:namaIstilah "Garang Asem" ;
+    kul:asalDaerah kul:JawaTengah ;
+    kul:etimologi "Garang merujuk pada rasa pedas yang menghangatkan tubuh, dan asem berasal dari rasa asam segar buah belimbing wuluh yang dimasak dalam bungkusan daun pisang." ;
+    kul:bahanUtama kul:DagingAyam, kul:Santan .
+
+kul:TahuPetis a kul:Makanan ;
+    kul:namaIstilah "Tahu Petis" ;
+    kul:asalDaerah kul:JawaTengah ;
+    kul:etimologi "Sajian tahu goreng khas Semarang yang bagian tengahnya dibelah lalu disisipi petis, yaitu pasta hitam kental dari udang berbumbu manis gurih." ;
+    kul:bahanUtama kul:Tahu .
+
+kul:SotoKudus a kul:Makanan ;
+    kul:namaIstilah "Soto Kudus" ;
+    kul:asalDaerah kul:JawaTengah ;
+    kul:etimologi "Soto khas Kabupaten Kudus. Secara tradisional menggunakan daging kerbau untuk menghormati masyarakat pemeluk agama Hindu di masa dakwah Sunan Kudus." ;
+    kul:bahanUtama kul:DagingSapi, kul:KalduKuah .
+
+kul:NasiGandul a kul:Makanan ;
+    kul:namaIstilah "Nasi Gandul" ;
+    kul:asalDaerah kul:JawaTengah ;
+    kul:etimologi "Gandul dalam bahasa Jawa berarti menggantung. Merujuk pada cara penjual zaman dahulu menjajakan nasi ini dengan memikul bakul yang terlihat menggantung bergoyang." ;
+    kul:bahanUtama kul:Beras, kul:DagingSapi, kul:Santan .
+
+kul:Timlo a kul:Makanan ;
+    kul:namaIstilah "Timlo" ;
+    kul:asalDaerah kul:JawaTengah ;
+    kul:etimologi "Diduga kuat merupakan hasil adaptasi lokal dari sup kimlo khas Tionghoa, disajikan dengan kuah kaldu ayam bening berisi sosis solo dan telur." ;
+    kul:bahanUtama kul:DagingAyam, kul:KalduKuah, kul:Telur .
+
+kul:SelatSolo a kul:Makanan ;
+    kul:namaIstilah "Selat Solo" ;
+    kul:asalDaerah kul:JawaTengah ;
+    kul:etimologi "Kata 'selat' berasal dari pelafalan lokal masyarakat Jawa untuk kuliner barat 'salad' atau 'slacht'. Perpaduan bistik daging sapi ala Eropa dengan cita rasa Jawa." ;
+    kul:bahanUtama kul:DagingSapi, kul:Telur .
+
+kul:MangutLele a kul:Makanan ;
+    kul:namaIstilah "Mangut Lele" ;
+    kul:asalDaerah kul:DIYogyakarta ;
+    kul:etimologi "Mangut adalah istilah masakan Jawa untuk ikan yang diasap terlebih dahulu sebelum dimasak ke dalam kuah santan pedas gurih." ;
+    kul:bahanUtama kul:Santan, kul:Cabai .
+
+kul:SateKlatak a kul:Makanan ;
+    kul:namaIstilah "Sate Klatak" ;
+    kul:asalDaerah kul:DIYogyakarta ;
+    kul:etimologi "Dinamakan klatak karena bunyi 'klatak-klatak' yang muncul saat garam kasar ditaburkan di atas daging kambing muda yang dibakar menggunakan jeruji besi sepeda." ;
+    kul:bahanUtama kul:DagingKambing .
+
+kul:Bakpia a kul:Makanan ;
+    kul:namaIstilah "Bakpia" ;
+    kul:asalDaerah kul:DIYogyakarta ;
+    kul:etimologi "Berasal dari dialek Hokkian 'bak' (daging) dan 'pia' (kue). Di Yogyakarta, isian daging diganti menjadi kacang hijau manis agar sesuai dengan lidah lokal." ;
+    kul:bahanUtama kul:TepungTerigu, kul:KacangKedelai .
+
+kul:Kipo a kul:Makanan ;
+    kul:namaIstilah "Kipo" ;
+    kul:asalDaerah kul:DIYogyakarta ;
+    kul:etimologi "Berasal dari pertanyaan singkat dalam bahasa Jawa 'Iki opo?' (Ini apa?), yang sering dilontarkan pembeli saat melihat kue ketan hijau mini isi enten-enten ini." ;
+    kul:bahanUtama kul:BerasKetan, kul:KelapaParut, kul:GulaAren .
+
+kul:JadahTempe a kul:Makanan ;
+    kul:namaIstilah "Jadah Tempe" ;
+    kul:asalDaerah kul:DIYogyakarta ;
+    kul:etimologi "Merupakan makanan kombinasi yang menggabungkan jadah (olahan ketan putih gurih) dengan tempe bacem manis, kuliner legendaris lereng Gunung Merapi." ;
+    kul:bahanUtama kul:BerasKetan, kul:Tempe .
+
+kul:RujakCingur a kul:Makanan ;
+    kul:namaIstilah "Rujak Cingur" ;
+    kul:asalDaerah kul:JawaTimur ;
+    kul:etimologi "Cingur dalam bahasa Jawa berarti mulut atau tulang rawan hidung sapi. Bagian inilah yang direbus empuk dan dijadikan bahan utama rujak saus petis." ;
+    kul:bahanUtama kul:DagingSapi, kul:SayuranRebus .
+
+kul:SotoLamongan a kul:Makanan ;
+    kul:namaIstilah "Soto Lamongan" ;
+    kul:asalDaerah kul:JawaTimur ;
+    kul:etimologi "Soto khas Lamongan yang sangat terkenal di Nusantara karena penggunaan bubuk koya, yaitu bubuk gurih hasil tumbukan kerupuk udang dan bawang putih goreng." ;
+    kul:bahanUtama kul:DagingAyam, kul:KalduKuah .
+
+kul:TahuTek a kul:Makanan ;
+    kul:namaIstilah "Tahu Tek" ;
+    kul:asalDaerah kul:JawaTimur ;
+    kul:etimologi "Dinamakan tahu tek karena gunting yang digunakan pedagang untuk memotong tahu dan lontong selalu memunculkan bunyi 'tek-tek-tek' yang khas saat beradu." ;
+    kul:bahanUtama kul:Tahu, kul:BumbuKacang .
+
+kul:LontongBalap a kul:Makanan ;
+    kul:namaIstilah "Lontong Balap" ;
+    kul:asalDaerah kul:JawaTimur ;
+    kul:etimologi "Dinamakan balap karena dahulu para penjual lontong ini berebut atau berjalan cepat (balapan) menuju Pasar Besar Surabaya agar dagangannya cepat laku." ;
+    kul:bahanUtama kul:Ketupat, kul:Tahu .
+
+kul:PecelMadiun a kul:Makanan ;
+    kul:namaIstilah "Pecel Madiun" ;
+    kul:asalDaerah kul:JawaTimur ;
+    kul:etimologi "Pecel berasal dari kata bahasa Jawa Kuno yang berarti diperas setelah direbus. Disajikan di atas pincuk daun pisang dengan siraman bumbu kacang beraroma jeruk purut." ;
+    kul:bahanUtama kul:SayuranRebus, kul:KacangTanah .
+
+kul:BaksoMalang a kul:Makanan ;
+    kul:namaIstilah "Bakso Malang" ;
+    kul:asalDaerah kul:JawaTimur ;
+    kul:etimologi "Varian bakso lengkap khas Kota Malang yang memadukan pentol sapi, tahu bakso, pangsit goreng garing, dan pangsit kukus dalam satu mangkuk kaldu." ;
+    kul:bahanUtama kul:Bakso, kul:Siomay, kul:KalduKuah .
+
+kul:SateMadura a kul:Makanan ;
+    kul:namaIstilah "Sate Madura" ;
+    kul:asalDaerah kul:JawaTimur ;
+    kul:etimologi "Sate khas Pulau Madura yang mendunia, menggunakan potongan daging ayam tipis dengan siraman saus kacang yang dihaluskan sangat lembut dan manis." ;
+    kul:bahanUtama kul:DagingAyam, kul:KacangTanah .
+
+kul:NasiKrawu a kul:Makanan ;
+    kul:namaIstilah "Nasi Krawu" ;
+    kul:asalDaerah kul:JawaTimur ;
+    kul:etimologi "Krawu berasal dari kata 'krawukan' yang berarti mengambil makanan atau lauk pauk langsung dengan jemari tangan tanpa sendok." ;
+    kul:bahanUtama kul:Beras, kul:DagingSapi, kul:KelapaParut .
+
+kul:Lawar a kul:Makanan ;
+    kul:namaIstilah "Lawar" ;
+    kul:asalDaerah kul:Bali ;
+    kul:etimologi "Berasal dari bahasa Bali yang berarti campuran sayuran, daging cincang, dan parutan kelapa yang dibumbui secara merata dengan base gede." ;
+    kul:bahanUtama kul:KelapaParut, kul:BumbuGenep .
+
+kul:NasiJinggo a kul:Makanan ;
+    kul:namaIstilah "Nasi Jinggo" ;
+    kul:asalDaerah kul:Bali ;
+    kul:etimologi "Berasal dari kata 'jenggo' (populer dari film barat) atau dari bahasa Hokkian 'jeng go' yang berarti seribu lima ratus, merujuk pada harga jual awal nasi porsi mini ini." ;
+    kul:bahanUtama kul:Beras, kul:DagingAyam, kul:Cabai .
+
+kul:TumAyam a kul:Makanan ;
+    kul:namaIstilah "Tum Ayam" ;
+    kul:asalDaerah kul:Bali ;
+    kul:etimologi "Tum merujuk pada teknik membungkus masakan tradisional Bali menggunakan daun pisang yang dilipat melingkar lalu dikunci atasnya menggunakan lidi sebelum dikukus." ;
+    kul:bahanUtama kul:DagingAyam, kul:BumbuGenep .
+
+kul:PlecingKangkung a kul:Makanan ;
+    kul:namaIstilah "Plecing Kangkung" ;
+    kul:asalDaerah kul:NusaTenggaraBarat ;
+    kul:etimologi "Plecing merujuk pada sambal ulek khas Lombok berbahan dasar cabai rawit, tomat, dan terasi bakar yang disiramkan di atas kangkung air rebus." ;
+    kul:bahanUtama kul:Cabai .
+
+kul:AyamRarang a kul:Makanan ;
+    kul:namaIstilah "Ayam Rarang" ;
+    kul:asalDaerah kul:NusaTenggaraBarat ;
+    kul:etimologi "Dinamakan dari Desa Rarang di Lombok Timur, tempat resep ayam goreng berbalut bumbu sambal goreng pasta cabai kering merah menyala ini berasal." ;
+    kul:bahanUtama kul:DagingAyam, kul:Cabai .
+
+kul:SatePusut a kul:Makanan ;
+    kul:namaIstilah "Sate Pusut" ;
+    kul:asalDaerah kul:NusaTenggaraBarat ;
+    kul:etimologi "Sate khas Lombok berupa campuran daging sapi cincang, kelapa parut, dan rempah santan yang dililitkan membungkus tusuk sate pipih." ;
+    kul:bahanUtama kul:DagingSapi, kul:KelapaParut .
+
+kul:BeberukTerong a kul:Makanan ;
+    kul:namaIstilah "Beberuk Terong" ;
+    kul:asalDaerah kul:NusaTenggaraBarat ;
+    kul:etimologi "Sajian lalapan mentah segar berupa potongan terong gelatik bundar dan kacang panjang yang diaduk bersama sambal tomat mentah." ;
+    kul:bahanUtama kul:Cabai .
+
+kul:SeiDaging a kul:Makanan ;
+    kul:namaIstilah "Sei" ;
+    kul:asalDaerah kul:NusaTenggaraTimur ;
+    kul:etimologi "Sei berasal dari bahasa Rote yang berarti daging yang diiris tipis memanjang lalu diasap di atas bara api kayu kosambi hingga matang kering." ;
+    kul:bahanUtama kul:DagingSapi, kul:RempahRempah .
+
+kul:KoloNasi a kul:Makanan ;
+    kul:namaIstilah "Kolo" ;
+    kul:asalDaerah kul:NusaTenggaraTimur ;
+    kul:etimologi "Kolo merujuk pada teknik menanak nasi tradisional suku Manggarai dengan memasukkan beras berbumbu ke dalam sebilah bambu muda lalu dibakar." ;
+    kul:bahanUtama kul:Beras, kul:RempahRempah .
+
+kul:JagungBose a kul:Makanan ;
+    kul:namaIstilah "Jagung Bose" ;
+    kul:asalDaerah kul:NusaTenggaraTimur ;
+    kul:etimologi "Bose berarti dilunakkan atau dihancurkan. Merupakan bubur jagung putih tradisional yang dimasak lama bersama kacang-kacangan dan santan." ;
+    kul:bahanUtama kul:Jagung, kul:Santan .
+
+kul:CatemakJagung a kul:Makanan ;
+    kul:namaIstilah "Catemak Jagung" ;
+    kul:asalDaerah kul:NusaTenggaraTimur ;
+    kul:etimologi "Hidangan pencuci mulut asin gurih berupa jagung yang direbus bersama labu lilin dan sayur hijau murni tanpa gula." ;
+    kul:bahanUtama kul:Jagung .
+
+kul:BuburPedas a kul:Makanan ;
+    kul:namaIstilah "Bubur Pedas Sambas" ;
+    kul:asalDaerah kul:KalimantanBarat ;
+    kul:etimologi "Meskipun bernama pedas, kata tersebut dalam bahasa Melayu Sambas berarti beraneka ragam sayuran dan rempah yang dicampurkan ke dalam bubur beras sangrai." ;
+    kul:bahanUtama kul:Beras, kul:SayuranRebus .
+
+kul:ChoiPan a kul:Makanan ;
+    kul:namaIstilah "Choi Pan" ;
+    kul:asalDaerah kul:KalimantanBarat ;
+    kul:etimologi "Berasal dari dialek Hakka; 'choi' berarti sayuran dan 'pan' berarti kue. Kuliner kukus kulit bening berisi tumisan bengkuang dan ebi." ;
+    kul:bahanUtama kul:TepungBeras, kul:Ebi .
+
+kul:KwetiauPontianak a kul:Makanan ;
+    kul:namaIstilah "Kwetiau Pontianak" ;
+    kul:asalDaerah kul:KalimantanBarat ;
+    kul:etimologi "Mie pipih beras legendaris khas Pontianak yang digoreng kering dengan teknik wajan membara (wok hei) bersama potongan daging sapi empuk." ;
+    kul:bahanUtama kul:TepungBeras, kul:DagingSapi .
+
+kul:SotongPangkong a kul:Makanan ;
+    kul:namaIstilah "Sotong Pangkong" ;
+    kul:asalDaerah kul:KalimantanBarat ;
+    kul:etimologi "Pangkong dalam bahasa Melayu Pontianak berarti dipukul menggunakan palu. Sotong atau cumi kering dipanggang lalu dipukul agar teksturnya empuk." ;
+    kul:bahanUtama kul:Cabai .
+
+kul:JuhuSingkah a kul:Makanan ;
+    kul:namaIstilah "Juhu Singkah Enyuh" ;
+    kul:asalDaerah kul:KalimantanTengah ;
+    kul:etimologi "Juhu berarti sayur berkuah dalam bahasa Dayak Ngaju, sedangkan singkah enyuh merujuk pada umbut atau rotan muda yang berasa pahit segar." ;
+    kul:bahanUtama kul:RempahRempah .
+
+kul:WadiIkan a kul:Makanan ;
+    kul:namaIstilah "Wadi Ikan" ;
+    kul:asalDaerah kul:KalimantanTengah ;
+    kul:etimologi "Merupakan kuliner fermentasi kuno suku Dayak, memanfaatkan garam dan parutan padi sangrai (samu) untuk mengawetkan ikan air tawar berbulan-bulan." ;
+    kul:bahanUtama kul:Beras .
+
+kul:Bangamat a kul:Makanan ;
+    kul:namaIstilah "Bangamat" ;
+    kul:asalDaerah kul:KalimantanTengah ;
+    kul:etimologi "Merujuk langsung pada bahan baku ekstremnya dalam tradisi Dayak, yaitu olahan daging kelelawar buah besar yang dimasak dengan sayur hati pohon pisang." ;
+    kul:bahanUtama kul:RempahRempah .
+
+kul:SotoManggala a kul:Makanan ;
+    kul:namaIstilah "Soto Manggala" ;
+    kul:asalDaerah kul:KalimantanTengah ;
+    kul:etimologi "Manggala adalah sebutan masyarakat Pangkalan Bun untuk singkong. Soto unik ini menggunakan potongan singkong rebus sebagai pengganti nasi atau bihun." ;
+    kul:bahanUtama kul:UbiKayu, kul:DagingAyam, kul:KalduKuah .
+
+kul:KetupatKandangan a kul:Makanan ;
+    kul:namaIstilah "Ketupat Kandangan" ;
+    kul:asalDaerah kul:KalimantanSelatan ;
+    kul:etimologi "Ketupat khas daerah Kandangan yang disiram kuah santan kental beraroma kayu manis dengan lauk utama ikan haruan (gabus) asap bakar." ;
+    kul:bahanUtama kul:Ketupat, kul:Santan .
+
+kul:ApamBarabai a kul:Makanan ;
+    kul:namaIstilah "Apam Barabai" ;
+    kul:asalDaerah kul:KalimantanSelatan ;
+    kul:etimologi "Kue basah tradisional khas kota Barabai berbahan tepung beras fermented tape singkong, bertekstur legit, tipis, dan sangat lembut." ;
+    kul:bahanUtama kul:TepungBeras, kul:GulaAren .
+
+kul:BingkaBanjar a kul:Makanan ;
+    kul:namaIstilah "Bingka Banjar" ;
+    kul:asalDaerah kul:KalimantanSelatan ;
+    kul:etimologi "Kue basah primadona wadai Banjar bertekstur sangat padat lemak, legit, berminyak, dicetak menyerupai kelopak bunga." ;
+    kul:bahanUtama kul:Telur, kul:Santan, kul:TepungTerigu .
+
+kul:GanganAsam a kul:Makanan ;
+    kul:namaIstilah "Gangan Asam Banjar" ;
+    kul:asalDaerah kul:KalimantanSelatan ;
+    kul:etimologi "Gangan berarti sayur berkuah. Merupakan sup ikan patin atau haruan berwarna kuning kunyit dengan sensasi rasa asam segar buah belimbing." ;
+    kul:bahanUtama kul:IkanPatin, kul:Cabai .
+
+kul:AyamCincane a kul:Makanan ;
+    kul:namaIstilah "Ayam Cincane" ;
+    kul:asalDaerah kul:KalimantanTimur ;
+    kul:etimologi "Hidangan ayam kampung bakar legendaris kesultanan Kutai, dibalur bumbu merah pekat meresap dari jahe, lengkuas, dan terasi." ;
+    kul:bahanUtama kul:DagingAyam, kul:RempahRempah .
+
+kul:NasiBekepor a kul:Makanan ;
+    kul:namaIstilah "Nasi Bekepor" ;
+    kul:asalDaerah kul:KalimantanTimur ;
+    kul:etimologi "Bekepor merujuk pada proses memutar-mutar kuali berisi beras di atas liang bara api arang kayu agar matangnya merata sempurna." ;
+    kul:bahanUtama kul:Beras, kul:Ebi .
+
+kul:GenceRuan a kul:Makanan ;
+    kul:namaIstilah "Gence Ruan" ;
+    kul:asalDaerah kul:KalimantanTimur ;
+    kul:etimologi "Ruan berasal dari ikan haruan (gabus). Ikan dibakar utuh lalu disiram secara melimpah dengan tumisan bumbu gence kasar yang pedas masam." ;
+    kul:bahanUtama kul:Cabai .
+
+kul:RabhaKutai a kul:Makanan ;
+    kul:namaIstilah "Daging Rabha" ;
+    kul:asalDaerah kul:KalimantanTimur ;
+    kul:etimologi "Olahan daging sapi peninggalan istana Kutai Kartanegara yang dimasak pelan menggunakan bumbu kecap pekat beraroma pala." ;
+    kul:bahanUtama kul:DagingSapi .
+
+kul:Tudai a kul:Makanan ;
+    kul:namaIstilah "Kerang Tudai" ;
+    kul:asalDaerah kul:KalimantanUtara ;
+    kul:etimologi "Tudai adalah sebutan lokal Bulungan untuk sejenis kerang darah berdaging tebal yang melimpah di daerah pesisir pantai Kalimantan Utara." ;
+    kul:bahanUtama kul:Cabai .
+
+kul:KepitingSokaTarakan a kul:Makanan ;
+    kul:namaIstilah "Kepiting Soka Tarakan" ;
+    kul:asalDaerah kul:KalimantanUtara ;
+    kul:etimologi "Tarakan terkenal di dunia sebagai penghasil kepiting cangkang lunak (soka) berkualitas tinggi yang bisa disantap utuh." ;
+    kul:bahanUtama kul:Kepiting, kul:MinyakGoreng .
+
+kul:NasiSubut a kul:Makanan ;
+    kul:namaIstilah "Nasi Subut" ;
+    kul:asalDaerah kul:KalimantanUtara ;
+    kul:etimologi "Makanan pokok tradisional suku Tidung berupa campuran nasi, ubi ungu kukus, dan butiran jagung manis sehingga berwarna ungu alami." ;
+    kul:bahanUtama kul:Beras, kul:Jagung .
+
+kul:LawarTutung a kul:Makanan ;
+    kul:namaIstilah "Lawar Tutung" ;
+    kul:asalDaerah kul:KalimantanUtara ;
+    kul:etimologi "Berbeda dengan Bali, lawar di Kaltara merujuk pada kerang laut potong mentah yang difermentasi perasan jeruk nipis dan cabai." ;
+    kul:bahanUtama kul:Cabai .
+
+kul:Klappertaart a kul:Makanan ;
+    kul:namaIstilah "Klappertaart" ;
+    kul:asalDaerah kul:SulawesiUtara ;
+    kul:etimologi "Berasal dari bahasa Belanda; 'klapper' (kelapa) dan 'taart' (kue tart). Kue peninggalan kolonial dengan custard susu melimpah berisi daging kelapa muda." ;
+    kul:bahanUtama kul:KelapaParut, kul:Telur, kul:TepungTerigu .
+
+kul:AyamWoku a kul:Makanan ;
+    kul:namaIstilah "Ayam Woku" ;
+    kul:asalDaerah kul:SulawesiUtara ;
+    kul:etimologi "Woku berasal dari nama daun woka (sejenis janur) yang dahulu digunakan sebagai alas pembungkus masakan kaya daun kemangi dan daun jeruk ini." ;
+    kul:bahanUtama kul:DagingAyam, kul:Cabai .
+
+kul:AyamPaniki a kul:Makanan ;
+    kul:namaIstilah "Ayam Paniki" ;
+    kul:asalDaerah kul:SulawesiUtara ;
+    kul:etimologi "Paniki adalah sebutan suku Minahasa untuk kelelawar. Namun resep bumbu santan pekat pedas ini kini lebih umum diterapkan pada daging ayam." ;
+    kul:bahanUtama kul:DagingAyam, kul:Santan, kul:Cabai .
+
+kul:CakalangFufu a kul:Makanan ;
+    kul:namaIstilah "Cakalang Fufu" ;
+    kul:asalDaerah kul:SulawesiUtara ;
+    kul:etimologi "Fufu dalam bahasa Minahasa berarti diasap. Ikan cakalang dijepit bambu lalu diasap lama hingga berubah warna kemerahan dan awet garing." ;
+    kul:bahanUtama kul:IkanCakalang .
+
+kul:Biliami a kul:Makanan ;
+    kul:namaIstilah "Biliami" ;
+    kul:asalDaerah kul:Gorontalo ;
+    kul:etimologi "Kue basah tradisional khas Gorontalo bertekstur super lembut kenyal yang dimasak matang dengan cara dikukus dalam cetakan kecil." ;
+    kul:bahanUtama kul:TepungBeras, kul:Santan .
+
+kul:Ilabulo a kul:Makanan ;
+    kul:namaIstilah "Ilabulo" ;
+    kul:asalDaerah kul:Gorontalo ;
+    kul:etimologi "Makanan tradisional peninggalan para raja Gorontalo berupa campuran tepung sagu, jeroan ayam, dan telur yang dibungkus daun pisang lalu dibakar." ;
+    kul:bahanUtama kul:TepungSagu, kul:Telur .
+
+kul:BintheBiluhuta a kul:Makanan ;
+    kul:namaIstilah "Binthe Biluhuta" ;
+    kul:asalDaerah kul:Gorontalo ;
+    kul:etimologi "Binthe berarti jagung, biluhuta berarti disiram. Sup jagung manis legendaris berkuah asam segar dicampur parutan kelapa dan suwiran tongkol." ;
+    kul:bahanUtama kul:Jagung, kul:KelapaParut, kul:IkanTongkol .
+
+kul:AyamIloni a kul:Makanan ;
+    kul:namaIstilah "Ayam Iloni" ;
+    kul:asalDaerah kul:Gorontalo ;
+    kul:etimologi "Ayam bakar khas Gorontalo yang membedakannya dengan daerah lain adalah ayam dimasak matang dalam kuah santan kaya rempah sebelum dibakar." ;
+    kul:bahanUtama kul:DagingAyam, kul:Santan .
+
+kul:Kaledo a kul:Makanan ;
+    kul:namaIstilah "Kaledo" ;
+    kul:asalDaerah kul:SulawesiTengah ;
+    kul:etimologi "Sering diartikan sebagai akronim 'Kaki Lembu Donggala'. Sup tulang kaki lembu/sapi berkuah bening asam pedas luar biasa berkat asam jawa mentah." ;
+    kul:bahanUtama kul:DagingSapi, kul:KalduKuah, kul:Cabai .
+
+kul:UtaDada a kul:Makanan ;
+    kul:namaIstilah "Uta Dada" ;
+    kul:asalDaerah kul:SulawesiTengah ;
+    kul:etimologi "Uta dada berarti sayur bagian dada ayam dalam bahasa Kaili. Masakan berkuah santan encer kuning dengan aroma asap ayam yang pekat." ;
+    kul:bahanUtama kul:DagingAyam, kul:Santan .
+
+kul:Palumara a kul:Makanan ;
+    kul:namaIstilah "Palumara" ;
+    kul:asalDaerah kul:SulawesiTengah ;
+    kul:etimologi "Palu berarti masakan berkuah, mara berarti kering/kental. Sup kepala ikan kakap atau bandeng berkuah kuning asam jawa pedas." ;
+    kul:bahanUtama kul:IkanBandeng, kul:Cabai .
+
+kul:NasiJahaTengah a kul:Makanan ;
+    kul:namaIstilah "Nasi Jaha" ;
+    kul:asalDaerah kul:SulawesiTengah ;
+    kul:etimologi "Nasi ketan bersantan beraroma jahe tajam yang dimasukkan ke dalam selongsong bambu berlapis daun pisang lalu dipanggang lama." ;
+    kul:bahanUtama kul:BerasKetan, kul:Santan .
+
+kul:BauPeapi a kul:Makanan ;
+    kul:namaIstilah "Bau Peapi" ;
+    kul:asalDaerah kul:SulawesiBarat ;
+    kul:etimologi "Bau berarti ikan, peapi berarti dimasak atau direbus. Sup ikan mandar berkuah kuning encer andalan pelaut Mandar memanfaatkan minyak kelapa murni." ;
+    kul:bahanUtama kul:IkanTuna, kul:RempahRempah .
+
+kul:Jepa a kul:Makanan ;
+    kul:namaIstilah "Jepa" ;
+    kul:asalDaerah kul:SulawesiBarat ;
+    kul:etimologi "Roti pipih bundar tradisional suku Mandar berbahan singkong parut diperas yang dipanggang di atas piringan tanah liat (panamba)." ;
+    kul:bahanUtama kul:UbiKayu, kul:KelapaParut .
+
+kul:KuePasa a kul:Makanan ;
+    kul:namaIstilah "Kue Pasa" ;
+    kul:asalDaerah kul:SulawesiBarat ;
+    kul:etimologi "Kue tradisional berbahan dasar tepung terigu dan srikaya manis yang dahulu disajikan khusus saat momen lamaran adat suku Mandar." ;
+    kul:bahanUtama kul:TepungTerigu, kul:Telur .
+
+kul:GolliGolli a kul:Makanan ;
+    kul:namaIstilah "Golli-Golli" ;
+    kul:asalDaerah kul:SulawesiBarat ;
+    kul:etimologi "Camilan manis tradisional berbentuk silinder kecil mengkilap terbuat dari adonan singkong rebus yang dibalur karamel gula aren padat." ;
+    kul:bahanUtama kul:UbiKayu, kul:GulaAren .
+
+kul:Pallubasa a kul:Makanan ;
+    kul:namaIstilah "Pallubasa" ;
+    kul:asalDaerah kul:SulawesiSelatan ;
+    kul:etimologi "Pallu berarti memasak, basa berarti basah/berkuah. Serupa coto namun kuahnya dicampur parutan kelapa sangrai (pammiko) dan kuning telur mentah." ;
+    kul:bahanUtama kul:DagingSapi, kul:Santan, kul:Telur .
+
+kul:NasuPalekko a kul:Makanan ;
+    kul:namaIstilah "Nasu Palekko" ;
+    kul:asalDaerah kul:SulawesiSelatan ;
+    kul:etimologi "Nasu berarti dimasak, palekko merujuk pada wajan kuali tanah liat konvensional Bugis. Ciri utamanya potongan daging bebek super pedas kering." ;
+    kul:bahanUtama kul:Telur, kul:Cabai .
+
+kul:Barongko a kul:Makanan ;
+    kul:namaIstilah "Barongko" ;
+    kul:asalDaerah kul:SulawesiSelatan ;
+    kul:etimologi "Kue mewah peninggalan raja Bugis berbahan dasar pisang kepok matang yang dihaluskan bersama telur, santan, lalu dikukus bungkus daun." ;
+    kul:bahanUtama kul:PisangKepok, kul:Santan, kul:Telur .
+
+kul:Kapurung a kul:Makanan ;
+    kul:namaIstilah "Kapurung" ;
+    kul:asalDaerah kul:SulawesiSelatan ;
+    kul:etimologi "Kuliner khas Luwu Raya berupa adonan sagu kental disiram air panas berbentuk bulatan, dinikmati dalam kuah ikan asam bersama sayur mayur." ;
+    kul:bahanUtama kul:TepungSagu, kul:SayuranRebus, kul:IkanTeri .
+
+kul:Sinonggi a kul:Makanan ;
+    kul:namaIstilah "Sinonggi" ;
+    kul:asalDaerah kul:SulawesiTenggara ;
+    kul:etimologi "Makanan pokok suku Tolaki berbahan sagu murni yang diaduk air mendidih hingga kenyal rekat, disantap terpisah dengan kuah ikan palumara." ;
+    kul:bahanUtama kul:TepungSagu, kul:AirPanas .
+
+kul:Kabuto a kul:Makanan ;
+    kul:namaIstilah "Kabuto" ;
+    kul:asalDaerah kul:SulawesiTenggara ;
+    kul:etimologi "Kuliner tradisional pengganti nasi berbahan singkong kering (gari) yang sengaja dibiarkan berjamur hitam alami lalu dikukus gurih kelapa parut." ;
+    kul:bahanUtama kul:UbiKayu, kul:KelapaParut .
+
+kul:Kasoami a kul:Makanan ;
+    kul:namaIstilah "Kasoami" ;
+    kul:asalDaerah kul:SulawesiTenggara ;
+    kul:etimologi "Kasoami merujuk pada tumpeng singkong kukus berbentuk kerucut khas Wakatobi, dibuat dari ampas parutan singkong yang telah diperas air racunnya." ;
+    kul:bahanUtama kul:UbiKayu .
+
+kul:LapaLapa a kul:Makanan ;
+    kul:namaIstilah "Lapa-Lapa" ;
+    kul:asalDaerah kul:SulawesiTenggara ;
+    kul:etimologi "Hidangan sejenis lontong ketan bersantan bungkus janur kelapa muda, wajib tersaji menyambut hari raya keagamaan masyarakat buton." ;
+    kul:bahanUtama kul:BerasKetan, kul:Santan .
+
+kul:GohuIkan a kul:Makanan ;
+    kul:namaIstilah "Gohu Ikan" ;
+    kul:asalDaerah kul:Maluku ;
+    kul:etimologi "Sering dijuluki 'Sashimi Maluku'. Potongan daging ikan tuna mentah segar yang langsung dilumuri perasan lemon cina, garam, daun kemangi, dan siraman minyak kelapa panas." ;
+    kul:bahanUtama kul:IkanTuna, kul:MinyakGoreng .
+
+kul:NasiLapola a kul:Makanan ;
+    kul:namaIstilah "Nasi Lapola" ;
+    kul:asalDaerah kul:Maluku ;
+    kul:etimologi "Nasi gurih khas Maluku hasil kombinasi masakan beras, kacang tolo merah, dan kelapa parut muda gurih yang dikukus menyatu." ;
+    kul:bahanUtama kul:Beras, kul:KelapaParut .
+
+kul:SupIkanJantungPisang a kul:Makanan ;
+    kul:namaIstilah "Sup Ikan Jantung Pisang" ;
+    kul:asalDaerah kul:Maluku ;
+    kul:etimologi "Sajian sup ikan laut segar berkuah bening gurih masam dengan campuran irisan umbut jantung pisang kepok pilihan." ;
+    kul:bahanUtama kul:IkanTenggiri .
+
+kul:KohuKohu a kul:Makanan ;
+    kul:namaIstilah "Kohu-Kohu" ;
+    kul:asalDaerah kul:Maluku ;
+    kul:etimologi "Urap ala Maluku, memadukan sayuran rebus pendek dengan suwiran ikan cakalang asap dan siraman perasan jeruk nipis melimpah." ;
+    kul:bahanUtama kul:SayuranRebus, kul:IkanCakalang, kul:KelapaParut .
+
+kul:GatangKenari a kul:Makanan ;
+    kul:namaIstilah "Gatang Kenari" ;
+    kul:asalDaerah kul:MalukuUtara ;
+    kul:etimologi "Gatang berarti kepiting. Hidangan mewah khas ternate memanfaatkan ketam kenari pembongkar buah kelapa yang dimasak bumbu rempah harum." ;
+    kul:bahanUtama kul:Kepiting, kul:RempahRempah .
+
+kul:PapedaKuahKuning a kul:Makanan ;
+    kul:namaIstilah "Papeda Kuah Kuning" ;
+    kul:asalDaerah kul:MalukuUtara ;
+    kul:etimologi "Sajian sagu kental yang disajikan berjodoh mendampingi masakan kepala ikan kuah kuning kunyit beraroma kenari tumbuk." ;
+    kul:bahanUtama kul:TepungSagu, kul:RempahRempah .
+
+kul:PopedaHalmahera a kul:Makanan ;
+    kul:namaIstilah "Popeda Halmahera" ;
+    kul:asalDaerah kul:MalukuUtara ;
+    kul:etimologi "Variasi lokal papeda dengan penyajian kuah bening ikan cakalang tanpa kunyit, mengandalkan cita rasa asli ikan segar." ;
+    kul:bahanUtama kul:TepungSagu, kul:IkanCakalang .
+
+kul:KueSaguMutiara a kul:Makanan ;
+    kul:namaIstilah "Kue Sagu Mutiara" ;
+    kul:asalDaerah kul:MalukuUtara ;
+    kul:etimologi "Kue kering tradisional bertekstur sangat keras peninggalan leluhur Maluku Utara berbahan pati sagu murni bakar rasa jahe manis." ;
+    kul:bahanUtama kul:TepungSagu, kul:GulaAren .
+
+kul:AyamBakarBambu a kul:Makanan ;
+    kul:namaIstilah "Ayam Bakar Bambu Papua" ;
+    kul:asalDaerah kul:Papua ;
+    kul:etimologi "Potongan daging ayam berbumbu rempah lengkap yang dimasukkan ke dalam ruas batang bambu penyekat daun pisang lalu dibakar di atas tumpukan batu membara." ;
+    kul:bahanUtama kul:DagingAyam, kul:RempahRempah .
+
+kul:UlatSaguGoreng a kul:Makanan ;
+    kul:namaIstilah "Ulat Sagu Goreng" ;
+    kul:asalDaerah kul:Papua ;
+    kul:etimologi "Kuliner ekstrem bergizi tinggi warisan suku pedalaman Papua, diambil langsung dari batang pohon sagu tua yang membusuk lalu digoreng kering gurih tanpa minyak." ;
+    kul:bahanUtama kul:UlatSagu .
+
+kul:SaguLempeng a kul:Makanan ;
+    kul:namaIstilah "Sagu Lempeng" ;
+    kul:asalDaerah kul:Papua ;
+    kul:etimologi "Kue roti keras berbentuk persegi panjang hasil cetakan tanah liat dibakar, biasa dinikmati dengan mencelupkannya ke dalam kopi hitam." ;
+    kul:bahanUtama kul:TepungSagu .
+
+kul:IkanBungkusPapua a kul:Makanan ;
+    kul:namaIstilah "Ikan Bungkus" ;
+    kul:asalDaerah kul:Papua ;
+    kul:etimologi "Pepes ala Papua, menggunakan daun talas tebal sebagai pembungkus ikan laut berbumbu garam dan potongan cabai sebelum dibakar." ;
+    kul:bahanUtama kul:IkanTongkol, kul:Cabai .
+
+kul:IkanBakarManokwari a kul:Makanan ;
+    kul:namaIstilah "Ikan Bakar Manokwari" ;
+    kul:asalDaerah kul:PapuaBarat ;
+    kul:etimologi "Ikan tongkol bakar khas teluk Manokwari yang disajikan spesial dengan siraman bumbu sambal mentah ulek kasar super pedas di atasnya." ;
+    kul:bahanUtama kul:IkanTongkol, kul:Cabai .
+
+kul:KueLontar a kul:Makanan ;
+    kul:namaIstilah "Kue Lontar" ;
+    kul:asalDaerah kul:PapuaBarat ;
+    kul:etimologi "Berasal dari pelafalan lokal untuk wadah piring keramik 'ronde' zaman Belanda. Kue pie susu berukuran jumbo bertekstur lembut manis rasa vanila." ;
+    kul:bahanUtama kul:TepungTerigu, kul:Telur .
+
+kul:SateRusaMerauke a kul:Makanan ;
+    kul:namaIstilah "Sate Rusa Merauke" ;
+    kul:asalDaerah kul:PapuaSelatan ;
+    kul:etimologi "Kuliner khas ujung timur Indonesia memanfaatkan populasi rusa yang melimpah, bertekstur serat daging lebih halus padat daripada sapi." ;
+    kul:bahanUtama kul:DagingRusa, kul:BumbuKacang .
+
+kul:AunuSenebre a kul:Makanan ;
+    kul:namaIstilah "Aunu Senebre" ;
+    kul:asalDaerah kul:PapuaTengah ;
+    kul:etimologi "Makanan tradisional berbahan dasar campuran ikan teri nasi dan parutan kelapa muda yang dikukus menyatu bersama irisan batang talas." ;
+    kul:bahanUtama kul:KelapaParut, kul:SayuranRebus .
+
+kul:KeladiTumbuk a kul:Makanan ;
+    kul:namaIstilah "Keladi Tumbuk" ;
+    kul:asalDaerah kul:PapuaPegunungan ;
+    kul:etimologi "Makanan pokok pengganti nasi suku pedalaman Pegunungan Tengah Papua berupa ubi keladi kukus yang ditumbuk manual menggunakan lesung kayu hingga kenyal halus." ;
+    kul:bahanUtama kul:UbiKayu .
+
+kul:UdangSelingkuh a kul:Makanan ;
+    kul:namaIstilah "Udang Selingkuh" ;
+    kul:asalDaerah kul:PapuaBaratDaya ;
+    kul:etimologi "Dinamakan selingkuh karena udang air tawar asal Wamena/Sorong ini memiliki capit besar tebal menyerupai capit kepiting laut." ;
+    kul:bahanUtama kul:Kepiting, kul:Cabai .
